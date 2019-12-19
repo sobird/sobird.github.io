@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>信封效果</title>
+  
+  <style type="text/css">
+    @keyframes ants {
+      to {
+        background-position: 100%;
+      }
+    }
+    .envelope-stroke {
+      display: block;
+      margin: 100px auto;
+      height: 0px;
+      border: 5px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+      repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0/5em 5em;
+      animation: ants 12s linear infinite;
+     }
+  </style>
+</head>
+<body>
+  
+  <div class="envelope-stroke"></div>
+</body>
+</html>
